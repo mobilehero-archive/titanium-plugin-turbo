@@ -1,4 +1,4 @@
-# @titanium/plugin-alloy-local
+# @titanium/plugin-turbo
 
 ![https://www.npmjs.com/package/@titanium/plugin-turbo](https://img.shields.io/npm/v/@titanium/plugin-turbo.png)
 

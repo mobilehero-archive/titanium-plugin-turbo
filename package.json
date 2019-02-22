@@ -1,6 +1,6 @@
 {
   "name": "@titanium/plugin-turbo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
   "scripts": {
     "postinstall": "node ./scripts/post-install.js"
