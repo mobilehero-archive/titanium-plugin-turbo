@@ -5,12 +5,12 @@
 > Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)
 
 
-- [📝 Description](#-description)
-- [🚀 Getting Started](#-getting-started)
-- [🔗 Related Links](#-related-links)
-- [📚 Learn More](#-learn-more)
-- [📣 Feedback](#-feedback)
-- [©️ Legal](#️-legal)
+- [📝 Description](#-Description)
+- [🚀 Getting Started](#-Getting-Started)
+- [🔗 Related Links](#-Related-Links)
+- [📚 Learn More](#-Learn-More)
+- [📣 Feedback](#-Feedback)
+- [©️ Legal](#️-Legal)
 
 ## 📝 Description
 
@@ -43,7 +43,7 @@ This will install the npm package as well as run a post-install script that will
 
 - [Titanium Mobile](https://www.npmjs.com/package/titanium) - Open-source tool for building powerful, cross-platform native apps with JavaScript.
 - [Alloy](https://www.npmjs.com/package/alloy) - MVC framework built on top of Titanium Mobile.
-- [Turbo](https://www.npmjs.com/package/@titanium/turbo) - Fork of Titanium Alloy that adds some enhancements and customizations for rapid development.
+- [Turbo](https://www.npmjs.com/package/@titanium/turbo) - Variation of Titanium Alloy that adds some enhancements and customizations for rapid development.
 - [Appcelerator](https://www.npmjs.com/package/appcelerator) - Installer for the Appcelerator Platform tool
 
 ## 📚 Learn More

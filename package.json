@@ -1,36 +1,43 @@
 {
-  "name": "@titanium/plugin-turbo",
-  "version": "1.0.2",
-  "description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
-  "scripts": {
-    "postinstall": "node ./scripts/post-install.js"
-  },
-  "keywords": [
-    "titanium",
-    "alloy",
-    "turbo",
-    "mobile",
-    "appcelerator",
-    "axway",
-    "amplify",
-    "plugin"
-  ],
-  "author": {
-    "name": "Brenton House",
-    "email": "brenton.house@gmail.com",
-    "url": "https://brenton.house"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github:brentonhouse/titanium-plugin-turbo"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "tiapp-dir": "^1.0.1",
-    "tiapp.xml": "^0.2.2",
-    "fs-extra": "^7.0.1"
-  },
-  "devDependencies": {
-    "@geek/eslint-config": "0.0.1"
-  }
+	"name": "@titanium/plugin-turbo",
+	"version": "1.0.3",
+	"description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
+	"scripts": {
+		"postinstall": "node ./scripts/post-install.js"
+	},
+	"keywords": [
+		"titanium",
+		"alloy",
+		"turbo",
+		"mobile",
+		"appcelerator",
+		"axway",
+		"amplify",
+		"plugin",
+		"brentonhouse"
+	],
+	"author": {
+		"name": "Brenton House",
+		"email": "brenton.house@gmail.com",
+		"url": "https://brenton.house"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github:brentonhouse/titanium-plugin-turbo"
+	},
+	"bugs": {
+		"url": "https://github.com/brentonhouse/titanium-plugin-turbo/issues"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"tiapp-dir": "^1.0.1",
+		"tiapp.xml": "^0.2.2",
+		"fs-extra": "^7.0.1"
+	},
+	"devDependencies": {
+		"@geek/eslint-config": "0.0.7"
+	},
+	"titanium": {
+		"ignore": true
+	}
 }
