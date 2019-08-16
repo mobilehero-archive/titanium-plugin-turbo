@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/plugin-turbo",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
 	"scripts": {
 		"postinstall": "node ./scripts/post-install.js"
@@ -14,7 +14,7 @@
 		"axway",
 		"amplify",
 		"plugin",
-		"brentonhouse"
+		"brenton-house"
 	],
 	"author": {
 		"name": "Brenton House",
@@ -30,12 +30,12 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"tiapp-dir": "^1.0.1",
-		"tiapp.xml": "^0.2.2",
+		"@titanium/tiapp-xml": "^0.9.2",
 		"fs-extra": "^7.0.1"
 	},
 	"devDependencies": {
-		"@geek/eslint-config": "0.0.7"
+		"@geek/eslint-config": "0.0.7",
+		"eslint": "^6.1.0"
 	},
 	"titanium": {
 		"ignore": true

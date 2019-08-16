@@ -1,7 +1,11 @@
 const fs = require('fs-extra');
 const path = require('path');
-const tiappDir = require('tiapp-dir');
-const tiappXml = require('tiapp.xml');
+// const tiappDir = require('tiapp-dir');
+// const tiappXml = require('tiapp.xml');
+
+
+const tiappDir = require('@titanium/tiapp-xml/tiapp-dir');
+const tiappXml = require('@titanium/tiapp-xml');
 
 const pluginName = 'turbo';
 
