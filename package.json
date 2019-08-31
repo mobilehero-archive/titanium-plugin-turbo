@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/plugin-turbo",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
 	"scripts": {
 		"postinstall": "node ./scripts/post-install.js"
@@ -30,12 +30,14 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"@geek/spawn": "0.0.1-beta.6",
 		"@titanium/tiapp-xml": "^0.9.2",
-		"fs-extra": "^7.0.1"
+		"fs-extra": "^7.0.1",
+		"is-installed-globally": "^0.2.0"
 	},
 	"devDependencies": {
 		"@geek/eslint-config": "0.0.7",
-		"eslint": "^6.1.0"
+		"eslint": "^6.3.0"
 	},
 	"titanium": {
 		"ignore": true
