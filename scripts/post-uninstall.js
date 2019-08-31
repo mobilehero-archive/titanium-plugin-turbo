@@ -20,27 +20,22 @@ if( !isInstalledGlobally ){
 		return 0;
 	}
 
-	// copy plugin hook to the project's plugins directory
-	const pluginDest = path.join(root, 'plugins', pluginName, '1.0', 'hooks', pluginName + '.js');
-	console.info(`copying plugin to: ${pluginDest}`);
-	fs.copySync(path.join(__dirname, '..', 'hooks', pluginName + '.js'), pluginDest,  { overwrite: true  });
-
 	const tiappPath = path.join(root, 'tiapp.xml');
 
-	// modify tiapp.xml to add new plugin to it
-	console.info(`adding ${pluginName} plugin to: ${tiappPath}`);
+	// modify tiapp.xml to remove plugin from it
+	console.info(`removing ${pluginName} plugin from: ${tiappPath}`);
 	const tiapp = tiappXml.load(tiappPath);
-	tiapp.setPlugin(pluginName, '1.0');
+	tiapp.removePlugin(pluginName);
 	tiapp.write();
 
 } else {
 	const spawnSync = require('@geek/spawn').spawnSync;
 	const hookPath = path.join(__dirname, '..', 'hooks');
 	const pluginPath = path.join(__dirname, '..', 'plugins');
-	console.error('Installing global hook → ' + hookPath);
-	spawnSync('ti', ['config', 'paths.hooks', '--append', hookPath]);
-	console.error('Installing global plugin → ' + pluginPath);
-	spawnSync('ti', ['config', 'paths.plugins', '--append', pluginPath]);
+	console.error('Uninstalling global hook → ' + hookPath);
+	spawnSync('ti', ['config', 'paths.hooks', '--remove', hookPath]);
+	console.error('Uninstalling global plugin → ' + pluginPath);
+	spawnSync('ti', ['config', 'paths.plugins', '--remove', pluginPath]);
 }
 
 

@@ -4,6 +4,7 @@
 	"description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
 	"scripts": {
 		"postinstall": "node ./scripts/post-install.js",
+		"postuninstall": "node ./scripts/post-uninstall.js",
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
 	},
 	"keywords": [
