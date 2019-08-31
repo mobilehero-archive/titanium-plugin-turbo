@@ -43,8 +43,9 @@ if( !isInstalledGlobally ){
 	const hookPath = path.join(__dirname, '..', 'hooks');
 	const pluginPath = path.join(__dirname, '..', 'plugins');
 	console.error('Installing global hook → ' + hookPath);
-	spawnSync('ti', ['config', 'paths.hooks', '--add', hookPath]);
-	spawnSync('ti', ['config', 'paths.plugins', '--add', pluginPath]);
+	spawnSync('ti', ['config', 'paths.hooks', '--append', hookPath]);
+	console.error('Installing global plugin → ' + pluginPath);
+	spawnSync('ti', ['config', 'paths.plugins', '--append', pluginPath]);
 }
 
 
