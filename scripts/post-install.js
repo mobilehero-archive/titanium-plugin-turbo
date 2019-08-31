@@ -35,12 +35,14 @@ if( !isInstalledGlobally ){
 
 } else {
 	const spawnSync = require('@geek/spawn').spawnSync;
+
 	const hookPath = path.join(__dirname, '..', 'hooks');
-	const pluginPath = path.join(__dirname, '..', 'plugins');
 	console.error('Installing global hook → ' + hookPath);
 	spawnSync('ti', ['config', 'paths.hooks', '--append', hookPath]);
-	console.error('Installing global plugin → ' + pluginPath);
-	spawnSync('ti', ['config', 'paths.plugins', '--append', pluginPath]);
+
+	// const commandPath = path.join(__dirname, '..', 'commands');
+	// console.error('Installing global commands → ' + commandPath);
+	// spawnSync('ti', ['config', 'paths.commands', '--append', commandPath]);
 }
 
 
