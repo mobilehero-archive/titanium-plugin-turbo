@@ -10,7 +10,7 @@ exports.cliVersion = '>=3.2';
 const fs = require('fs');
 const path = require('path');
 
-const localTurboPath = path.join('.', 'node_modules', '.bin', 'turbo');
+const localTurboPath = path.join('.', 'node_modules', '.bin', 'turbo2');
 const localAlloyPath = path.join('.', 'node_modules', '.bin', 'alloy');
 
 if (fs.existsSync(localTurboPath)) {

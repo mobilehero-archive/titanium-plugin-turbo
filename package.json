@@ -33,13 +33,13 @@
 	"license": "MIT",
 	"dependencies": {
 		"@geek/spawn": "0.0.2",
-		"@titanium/tiapp-xml": "^0.9.2",
-		"fs-extra": "^7.0.1",
+		"@titanium/tiapp-xml": "^0.9.5",
+		"fs-extra": "^9.0.0",
 		"is-installed-globally": "^0.2.0"
 	},
 	"devDependencies": {
-		"@geek/eslint-config": "0.0.7",
-		"eslint": "^6.3.0"
+		"@geek/eslint-config": "0.0.10",
+		"eslint": "^6.8.0"
 	},
 	"titanium": {
 		"ignore": true
