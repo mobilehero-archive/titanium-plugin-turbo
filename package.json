@@ -1,12 +1,18 @@
 {
 	"name": "@titanium/plugin-turbo",
-	"version": "1.0.5",
-	"description": "Titanium Mobile plugin to use locally installed Turbo or Alloy (if available)",
+	"version": "1.0.6",
+	"description": "⭐  Axway Amplify plugin to use Turbo or Alloy with Appcelerator Titanium SDK",
 	"scripts": {
 		"postinstall": "node ./scripts/post-install.js",
 		"postuninstall": "node ./scripts/post-uninstall.js",
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+		"lint": "eslint . --fix",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prep": "npm install --ignore-scripts && npm run list",
+		"test": "npm run prep",
+		"prepublishOnly": "git pull && npm test && bump insane",
+		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
 	},
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"keywords": [
 		"titanium",
 		"alloy",
@@ -16,6 +22,16 @@
 		"axway",
 		"amplify",
 		"plugin",
+		"sdk",
+		"plugin",
+		"amplify",
+		"api-builder",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
 		"brenton-house"
 	],
 	"author": {
@@ -32,14 +48,26 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"@geek/spawn": "0.0.2",
-		"@titanium/tiapp-xml": "^0.9.2",
-		"fs-extra": "^7.0.1",
-		"is-installed-globally": "^0.2.0"
+		"@geek/logger": "^1.0.18",
+		"@geek/spawn": "0.0.3",
+		"@titanium/bluebird": "^3.7.8",
+		"@titanium/errors": "^1.0.5",
+		"@titanium/essentials": "^1.0.35",
+		"@titanium/events": "^1.0.18",
+		"@titanium/eventsource": "^1.0.3",
+		"@titanium/jwt": "^1.0.8",
+		"@titanium/module-copier": "^1.0.13",
+		"@titanium/please": "^1.0.16",
+		"@titanium/polyfill": "^1.0.15",
+		"@titanium/querystring": "^1.0.2",
+		"@titanium/tiapp-xml": "^1.0.11",
+		"@titanium/titanium": "^5.4.5",
+		"fs-extra": "^10.0.0",
+		"is-installed-globally": "^0.4.0"
 	},
 	"devDependencies": {
-		"@geek/eslint-config": "0.0.7",
-		"eslint": "^6.3.0"
+		"@geek/eslint-config": "1.0.3",
+		"eslint": "^8.6.0"
 	},
 	"titanium": {
 		"ignore": true
