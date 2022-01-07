@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/plugin-turbo",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "⭐  Axway Amplify plugin to use Turbo or Alloy with Appcelerator Titanium SDK",
 	"scripts": {
 		"postinstall": "node ./scripts/post-install.js",
