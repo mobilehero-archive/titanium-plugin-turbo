@@ -1,13 +1,13 @@
 {
 	"name": "@titanium/plugin-turbo",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "⭐  Axway Amplify plugin to use Turbo or Alloy with Appcelerator Titanium SDK",
 	"scripts": {
 		"postinstall": "node ./scripts/post-install.js",
 		"postuninstall": "node ./scripts/post-uninstall.js",
 		"lint": "eslint . --fix",
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"prep": "npm install --ignore-scripts && npm run list",
+		"prep": "npm install --ignore-scripts",
 		"test": "npm run prep",
 		"prepublishOnly": "git pull && npm test && bump insane",
 		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
@@ -36,37 +36,46 @@
 	],
 	"author": {
 		"name": "Brenton House",
-		"email": "brenton.house@gmail.com",
 		"url": "https://brenton.house"
 	},
 	"repository": {
 		"type": "git",
-		"url": "github:brentonhouse/titanium-plugin-turbo"
+		"url": "github:mobilehero-archive/titanium-plugin-turbo"
 	},
 	"bugs": {
-		"url": "https://github.com/brentonhouse/titanium-plugin-turbo/issues"
+		"url": "https://github.com/mobilehero-archive/titanium-plugin-turbo/issues"
 	},
 	"license": "MIT",
 	"dependencies": {
+		"@geek/cache": "^1.0.2",
+		"@geek/config": "^0.2.4",
+		"@geek/dotenv": "^0.0.9",
+		"@geek/jsonc": "^1.0.4",
+		"@geek/jwt": "^1.0.1",
 		"@geek/logger": "^1.0.18",
-		"@geek/spawn": "0.0.3",
-		"@titanium/bluebird": "^3.7.8",
-		"@titanium/errors": "^1.0.5",
-		"@titanium/essentials": "^1.0.35",
-		"@titanium/events": "^1.0.18",
-		"@titanium/eventsource": "^1.0.3",
-		"@titanium/jwt": "^1.0.8",
-		"@titanium/module-copier": "^1.0.13",
+		"@geek/retry": "^1.0.0",
+		"@geek/spawn": "^0.0.3",
+		"@geek/spinner": "^1.0.0",
+		"@geek/tld": "^2.0.1-1",
+		"@titanium/appcelerator": "^6.0.4",
+		"@titanium/bluebird": "^3.7.9",
+		"@titanium/errors": "^1.0.7",
+		"@titanium/essentials": "^1.0.38",
+		"@titanium/events": "^1.0.20",
+		"@titanium/eventsource": "^1.0.5",
+		"@titanium/jwt": "^1.0.9",
+		"@titanium/module-copier": "^1.0.15",
 		"@titanium/please": "^1.0.16",
-		"@titanium/polyfill": "^1.0.15",
+		"@titanium/polyfill": "^1.0.17",
 		"@titanium/querystring": "^1.0.2",
-		"@titanium/tiapp-xml": "^1.0.11",
-		"@titanium/titanium": "^5.4.5",
+		"@titanium/tiapp-xml": "^1.0.14",
+		"@titanium/titanium": "^5.4.8",
+		"@titanium/turbo": "^2.2.23",
 		"fs-extra": "^10.0.0",
 		"is-installed-globally": "^0.4.0"
 	},
 	"devDependencies": {
-		"@geek/eslint-config": "1.0.3",
+		"@geek/eslint-config": "^1.0.3",
 		"eslint": "^8.6.0"
 	},
 	"titanium": {
